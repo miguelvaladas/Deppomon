@@ -14,6 +14,7 @@ https://user-images.githubusercontent.com/102789861/193293508-f0fc633a-6de8-4882
 - [Usage](#usage)
 - [Pictures](#pictures)
 - [Considerations](#considerations)
+- [Authors](#authors)
 
 
 ## Usage
@@ -41,3 +42,10 @@ There are multiple Johnny Depp versions:
 
 ## Considerations
 We had a lot of fun creating our little game and some of us are still looking for their first opportunity. If you wanna meet us, send us a message!
+
+## Authors
+- Ema Germain
+- Miguel Oliveira
+- Miguel Raposo
+- Miguel Valadas
+- Nuno Pinto
