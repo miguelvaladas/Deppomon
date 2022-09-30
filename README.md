@@ -4,7 +4,7 @@ Inspired by the legal battle between Johnny Depp and Amber Heard, we decided to 
 
 Our fighting style was inspired in Pokemon (hence the name "Deppomon") and the player may choose between 3 versions of Johnny Depp.
 
-There is room for improvement in our code, however it was a great first experience (it was the first time I collaborated with this many people in a "big" project) since the deadline was very strict and we barely knew our team members and yet we managed to create a game we are proud of.
+There is room for improvement in our code, however it was a great first experience since the deadline was very strict and we barely knew our team members and yet we managed to create a game we are proud of.
 
 Our tech stack consisted of <b>Java</b> and the <b>SimpleGraphics Library</b>.
 
