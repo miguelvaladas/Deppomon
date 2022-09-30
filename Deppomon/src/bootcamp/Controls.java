@@ -65,9 +65,6 @@ public class Controls implements KeyboardHandler {
 
     public int actionWhenPressed(KeyboardEvent keyboardEvent) throws InterruptedException {
         if (game.getScreenCounter() == 1) {
-
-            switch (keyboardEvent.getKey()) {
-                case KeyboardEvent.KEY_SPACE:
                     game.clickSound();
                     game.deleteFirstScreen();
                     game.createSecondScreen();
@@ -75,21 +72,15 @@ public class Controls implements KeyboardHandler {
                     return 1;
             }
 
-        }
         if (game.getScreenCounter() == 2) {
-            switch (keyboardEvent.getKey()) {
-                case KeyboardEvent.KEY_SPACE:
                     game.clickSound();
                     game.deleteSecondScreen();
                     game.createThirdScreen();
                     game.incrementScreenCounter();
                     return 2;
-            }
         }
         if (game.getScreenCounter() == 3) {
             if (game.getCanMoveToFourthScreen()) {
-                switch (keyboardEvent.getKey()) {
-                    case KeyboardEvent.KEY_SPACE:
                         game.clickSound();
                         game.deleteThirdScreen();
                         game.createFourthScreen();
@@ -98,25 +89,17 @@ public class Controls implements KeyboardHandler {
                 }
             }
             if (!game.getUserStartedCarouselThirdScreen()) {
-                switch (keyboardEvent.getKey()) {
-                    case KeyboardEvent.KEY_SPACE:
                         game.clickSound();
                         game.choosePlayerThirdScreen();
                         return 3;
-                }
-            }
         }
         if (game.getScreenCounter() == 4) {
-
-            switch (keyboardEvent.getKey()) {
-                case KeyboardEvent.KEY_SPACE:
                     game.clickSound();
                     game.deleteFourthScreen();
                     game.createFifthScreen();
                     game.incrementScreenCounter();
                     game.startVillainAttacks();
                     return 4;
-            }
         }
         if (game.getScreenCounter() == 5) {
             switch (keyboardEvent.getKey()) {
@@ -150,8 +133,6 @@ public class Controls implements KeyboardHandler {
         }
         if (game.getScreenCounter() == 6) {
             if (game.isGameEnd() && game.getPlayerWon() && game.getWinningScreenCanMoveToNext()) {
-                switch (keyboardEvent.getKey()) {
-                    case KeyboardEvent.KEY_SPACE:
                         game.clickSound();
                         game.deleteWinningScreen();
                         game.createThirdScreen();
@@ -161,11 +142,8 @@ public class Controls implements KeyboardHandler {
                         game.setGameEnd(false);
                         game.setScreenCounter(3);
                         return 6;
-                }
             }
             if (game.isGameEnd() && !game.getPlayerWon() && game.getLosingScreenCanMoveToNext()) {
-                switch (keyboardEvent.getKey()) {
-                    case KeyboardEvent.KEY_SPACE:
                         game.clickSound();
                         game.deleteLosingScreen();
                         game.createThirdScreen();
@@ -175,7 +153,6 @@ public class Controls implements KeyboardHandler {
                         game.setGameEnd(false);
                         game.setScreenCounter(3);
                         return 6;
-                }
             }
         }
         return 0;

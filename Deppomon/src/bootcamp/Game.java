@@ -90,10 +90,8 @@ public class Game {
     }
 
     public void createThirdScreen() {
-        player = null;
         player = PlayerFactory.getNewPlayer();
         chosenPlayer = player.getChosenPlayer();
-        amberHeard = null;
         amberHeard = AmberFactory.getNewAmber();
         System.out.println(player);
         System.out.println(chosenPlayer);
