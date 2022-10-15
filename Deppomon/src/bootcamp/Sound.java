@@ -8,17 +8,14 @@ import java.net.URL;
 
 public class Sound {
 
-
     private Clip clip;
     private URL[] soundURL = new URL[6];
-
 
     public Sound(int chosenSound) {
         init();
 
         this.setFile(chosenSound);
     }
-
 
     public void init(){
         soundURL[0] = getClass().getResource("piratesound2.wav");
@@ -30,12 +27,10 @@ public class Sound {
     }
 
     public void setFile(int i) {
-
         try {
             AudioInputStream ais = AudioSystem.getAudioInputStream(soundURL[i]);
             clip = AudioSystem.getClip();
             clip.open(ais);
-
 
         } catch (Exception e) {
 
@@ -44,19 +39,14 @@ public class Sound {
     }
 
     public void play() {
-
         clip.start();
-
     }
 
     public void loop() {
-
         clip.loop(Clip.LOOP_CONTINUOUSLY);
-
     }
 
     public void stop() {
-
         clip.stop();
     }
 
